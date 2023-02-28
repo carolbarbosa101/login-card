@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap');
+*{
+    font-family: 'roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container{
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+.container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+.container form .inputBox{
+    margin-top: 20px;
+}
+.container form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+.container form .inputBox input,
+.container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+.container form .flexbox{
+    display: flex;
+    gap:15px;
+}
+.container form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+.container form .submit-btn{
+    width: 100%;
+    background:radial-gradient(circle at 91.14% 15.48%, #ff74f8 0, #ff70fc 10%, #ff6bfb 20%, #ff66f5 30%, #ea5ee9 40%, #be55d8 50%, #944bc4 60%, #6d43b1 70%, #483ba0 80%, #1f3591 90%, #002f84 100%);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+.container form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+.container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+.container .card-container .front{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:radial-gradient(circle at 91.14% 15.48%, #ff74f8 0, #ff70fc 10%, #ff6bfb 20%, #ff66f5 30%, #ea5ee9 40%, #be55d8 50%, #944bc4 60%, #6d43b1 70%, #483ba0 80%, #1f3591 90%, #002f84 100%);
+    border-radius: 17px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+.container .card-container .front .image img{
+    height: 50px;
+}
+.container .card-container .front .card-number-box{
+    align-items: center;
+    font-size: 15px;
+    color:#fff;
+    margin-top: 30px;
+    padding: 5px;
+}
+.container .card-container .front .email{
+    align-items: center;
+    font-size: 15px;
+    color:#fff;
+    margin-top: 10px;
+    padding: 5px;
+}
+.container .card-container .front span{
+  align-items: center;
+  font-size: 25px;
+  color:#fff;
+  margin-top: 10px;
+  padding: 5px;
+}
+.container .card-container .front .flexbox{
+    display: flex;
+}
+.container .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+.container .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}

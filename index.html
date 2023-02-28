@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="card-container">
+        <div class="front">
+          <span>pessoa vip</span>
+          <div class="card-number-box">Seu nome completo</div>
+          <div class="email">E-mail</div>
+        </div>
+
+    </div>
+    <form action="">
+        <div class="inputBox">
+            <span>Seu nome completo</span>
+            <input type="text" maxlength="50" class="card-number-input">
+        </div>
+        <div class="inputBox">
+            <span>E-mail</span>
+            <input type="text" maxlength="50" class="card-email-input">
+        </div>
+        <div class="flexbox">
+            <div class="inputBox">
+                <span>Mês Nascimento</span>
+                <select name="" id="" class="month-input">
+                    <option value="month" selected disabled>Mês</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>Ano nascimento</span>
+                <select name="" id="" class="year-input">
+                    <option value="year" selected disabled>Ano</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                </select>
+            </div>
+            </div>
+            <div class="inputBox">
+                <span>Senha:</span>
+                <input type="password" maxlength="50" class="card-number-input"></div>
+        <input type="submit" value="Login" class="submit-btn">
+    </form>
+</div>    
+<script>
+
+document.querySelector('.card-number-input').oninput = () =>{
+    document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+}
+
+document.querySelector('.card-email-input').oninput = () =>{
+    document.querySelector('.email').innerText = document.querySelector('.card-email-input').value;
+}
+
+</script>
+
+</body>
+</html>
